@@ -29,6 +29,7 @@ class Ball:
         arcade.draw_circle_filled(self.position_x, self.position_y, self.radius, self.color)
 
     def update(self):
+        """ Shows the dimensions of the object's code on the screen."""
         # Move the ball
         self.position_y += self.change_y
         self.position_x += self.change_x
@@ -50,7 +51,7 @@ class Ball:
 class MyGame(arcade.Window):
 
     def __init__(self, width, height, title):
-
+        """Shows the description of the item listed"""
         # Call the parent class's init function
         super().__init__(width, height, title)
 
@@ -69,6 +70,7 @@ class MyGame(arcade.Window):
         self.ball.draw()
 
     def update(self, delta_time):
+        """Updates the position of the ball"""
         self.ball.update()
 
     def on_key_press(self, key, modifiers):
@@ -91,6 +93,7 @@ class MyGame(arcade.Window):
 
 
 def main():
+    """Shows the dimensions of the screen used in the program"""
     window = MyGame(SCREEN_WIDTH, SCREEN_HEIGHT, SCREEN_TITLE)
     arcade.run()
 

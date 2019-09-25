@@ -10,7 +10,7 @@ import arcade
 
 SCREEN_WIDTH = 640
 SCREEN_HEIGHT = 480
-SCREEN_TITLE = "Move Mouse Example"
+SCREEN_TITLE = "Move Mouse Example" 
 
 
 class Ball:
@@ -28,7 +28,7 @@ class Ball:
 
 
 class MyGame(arcade.Window):
-
+        """The window setup to show when the program first loads on the screen."""
     def __init__(self, width, height, title):
 
         # Call the parent class's init function
