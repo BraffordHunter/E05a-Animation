@@ -1,10 +1,3 @@
-#Copy the contents from http://arcade.academy/examples/move_mouse.html#move-mouse and see if you can figure out what is going on. Add comments to any uncommented lines
-This simple animation example shows how to move an item with the mouse, and
-handle mouse clicks.
-
-If Python and Arcade are installed, this example can be run from the command line with:
-python -m arcade.examples.move_mouse
-"""
 
 import arcade
 
@@ -28,7 +21,7 @@ class Ball:
 
 
 class MyGame(arcade.Window):
-        """The window setup to show when the program first loads on the screen."""
+    """The window setup to show when the program first loads on the screen."""
     def __init__(self, width, height, title):
 
         # Call the parent class's init function
