@@ -1,22 +1,25 @@
 
 import arcade
-
+"""The screen's dimensions"""
 SCREEN_WIDTH = 640
 SCREEN_HEIGHT = 480
 SCREEN_TITLE = "Move Mouse Example" 
 
 
 class Ball:
+    """The object that is being used in the program"""
     def __init__(self, position_x, position_y, radius, color):
 
         # Take the parameters of the init function above, and create instance variables out of them.
+        """The perameters for where on the screen that the ball will be."""
+        """The lack of a concrete number represents the ability of the ball to move around the screen fluently."""
         self.position_x = position_x
         self.position_y = position_y
         self.radius = radius
         self.color = color
 
     def draw(self):
-        """ Draw the balls with the instance variables we have. """
+        """ The code that tells what the ball is supposed to look like. """
         arcade.draw_circle_filled(self.position_x, self.position_y, self.radius, self.color)
 
 
@@ -26,11 +29,11 @@ class MyGame(arcade.Window):
 
         # Call the parent class's init function
         super().__init__(width, height, title)
-
+    """ Tells the code what to do with the mouse"""
         # Make the mouse disappear when it is over the window.
         # So we just see our object, not the pointer.
         self.set_mouse_visible(False)
-
+    
         arcade.set_background_color(arcade.color.ASH_GREY)
 
         # Create our ball
