@@ -1,2 +1,2 @@
 # E05a-Animation
-This assignment is about Python Arcade. Python Arcade is a Python program application used for creating various computer operations. This assignment is only used for the two types of game controls listed. This assignment tells in detail how to code mouse and keyboard controls correctly corresponding within the game. 
+This assignment is about Python Arcade. Python Arcade is a Python program application used for creating various computer operations. This assignment is only used for the two types of game controls listed. This assignment tells in detail how to code mouse and keyboard controls correctly corresponding within the game. This includes what happens when an objects, in this case a ball collides with anything else interactive on the screen.

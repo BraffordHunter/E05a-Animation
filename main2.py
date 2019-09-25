@@ -14,6 +14,7 @@ MOVEMENT_SPEED = 3
 
 
 class Ball:
+    """The instructions for rendering the object being used in the program"""
     def __init__(self, position_x, position_y, change_x, change_y, radius, color):
 
         # Take the parameters of the init function above, and create instance variables out of them.
@@ -35,6 +36,8 @@ class Ball:
         self.position_x += self.change_x
 
         # See if the ball hit the edge of the screen. If so, change direction
+        """The ball's collision mechanics for the program This tells the ball's code what to do if the ball
+        encounters another object on the screen."""
         if self.position_x < self.radius:
             self.position_x = self.radius
 
@@ -49,9 +52,8 @@ class Ball:
 
 
 class MyGame(arcade.Window):
-
+"""Shows the description of the item listed"""
     def __init__(self, width, height, title):
-        """Shows the description of the item listed"""
         # Call the parent class's init function
         super().__init__(width, height, title)
 
