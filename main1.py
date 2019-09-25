@@ -52,7 +52,6 @@ class MyGame(arcade.Window):
     def on_mouse_press(self, x, y, button, modifiers):
         """
         Called when the user presses a mouse button.
-        """
         print(f"You clicked button number: {button}")
         if button == arcade.MOUSE_BUTTON_LEFT:
             self.ball.color = arcade.color.BLACK

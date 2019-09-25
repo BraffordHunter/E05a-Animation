@@ -49,7 +49,7 @@ class MyGame(arcade.Window):
     def __init__(self, width, height, title):
         # Call the parent class's init function
         super().__init__(width, height, title)
-
+    """The commands showing to do with the mouse once the window appears."""
         # Make the mouse disappear when it is over the window.
         # So we just see our object, not the pointer.
         self.set_mouse_visible(False)
